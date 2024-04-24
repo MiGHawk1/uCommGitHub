@@ -1,0 +1,28 @@
+.gridContainer {
+   display: grid;
+   grid-template-columns: [left] 1fr [right] 1fr;
+   grid-template-rows: 80px 480px 160px auto auto;
+   grid-template-areas: "navBar navBar" "motto blender" "intro intro" "features features" "footer footer";
+}
+
+header {
+   grid-area: navBar;
+}
+
+.heroContainer {
+   grid-column-start: motto;
+   grid-column-end: blender;
+}
+
+.introContainer {
+   grid-area: intro;
+}
+
+.featuresContainer {
+   grid-area: features;
+}
+
+footer {
+   grid-area: footer;
+}
+

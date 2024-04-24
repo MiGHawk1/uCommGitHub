@@ -1,0 +1,58 @@
+/*
+
+Grid layout.
+
+Colour palette: 
+#226BAC uBlue
+#AC6322 brownComplementary
+
+#2C85D5 blueMonochromatic
+
+#2226AC darkBlueAnalogous
+#22ACA8 greenAnalogous
+
+#AC226B redTriadic
+#6BAC22 greenTriadic
+
+#A822AC purpleTetradic
+#AC6322 brownTetradic
+#26AC22 greenTetradic
+
+Automatic Palette:
+#276eac blue
+#1e62a1 darkBlue
+#9cbcd4 lightGrey
+
+*/
+
+/* .gridContainer {
+   display: grid;
+   grid-template-columns: [left] 1fr [right] 1fr;
+   grid-template-rows: 100px 160px 420px auto auto;
+   grid-template-areas: "navBar navBar" "motto motto" "eBook eBook" "services services" "footer footer";
+}
+
+header {
+   grid-area: navBar;
+}
+
+.mottoContainer {
+   grid-area: motto;
+}
+
+.eBookContainer {
+   grid-area: eBook;
+}
+
+.servicesContainer {
+   grid-area: services;
+}
+
+footer {
+   grid-area: footer;
+} */
+
+
+
+
+

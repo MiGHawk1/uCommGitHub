@@ -1,0 +1,86 @@
+
+.servicesTitle {
+   display: flex;
+   justify-content: right;
+   margin-top: -20px;
+   height: 80px;
+   background: linear-gradient(to right, rgba(230, 233, 235, 0.7), rgb(172, 34, 107, 1.0));
+}
+
+.servicesTitle h2 {
+   color: #E7E7E7;
+   font-weight: bold;
+   letter-spacing: 2px;
+   font-size: 180%;
+   margin-top: 34px;
+   margin-right: 60px;
+}
+
+.serviceContainer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.serviceGoldBg {
+   background-image: url(/images/ServicesBgTextureGold.jpg);
+}
+
+.announcementContainer {
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   color: #49748e;
+   background-color: #f2f2f2;
+   width: 100%;
+   height: 160px;
+}
+
+.announcement {
+   max-width: 900px;
+   font-family: Arial;
+   font-family: Helvetica;
+   font-style: oblique;
+   font-size: 150%;
+   align-self: center;
+   text-align: center;
+}
+
+#lessonsImage {
+   max-width: 1120px;
+}
+
+#longImage {
+   width: 100%;
+}
+
+#subscribeCont {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+   margin: 20px;
+   color: #545454;
+}
+
+#subscribeCont a:link {
+   color: #49748E;
+}
+
+#blueButton {
+   width: 150px;
+   cursor: pointer;
+}
+
+#comingSoonContainer {
+   margin: 20px 0px 60px 0px;
+}
+
+#comingSoonStamp {
+   max-width: 400px;
+}
+
+.dropShadowBlue {
+   filter: drop-shadow(0px 0px 6px #226AAB);
+}

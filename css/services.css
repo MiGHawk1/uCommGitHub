@@ -1,0 +1,126 @@
+
+.servicesTitle {
+   display: flex;
+   justify-content: right;
+   margin-top: -20px;
+   height: 80px;
+   background: linear-gradient(to right, rgba(230, 233, 235, 0.7), rgb(172, 34, 107, 1.0));
+}
+
+.servicesTitle h2 {
+   color: #E7E7E7;
+   font-weight: bold;
+   letter-spacing: 2px;
+   font-size: 180%;
+   margin-top: 34px;
+   margin-right: 60px;
+}
+
+.serviceContainer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.serviceGoldBg {
+   background-image: url(/images/ServicesBgTextureGold.jpg);
+}
+
+.serviceBluishBg {
+   background-image: url(/images/ServicesBgTextureBluish.jpg);
+}
+
+.serviceYellowishBg {
+   background-image: url(/images/ServicesBgTextureYellowish.jpg);
+}
+
+.titleImage {
+   max-width: 1000px;
+   max-height: 750px;
+   margin-top: 60px;
+   margin-bottom: 50px;
+}
+
+.serviceImage {
+   width: 100%;
+   border: 1px;
+   border-style: solid;
+   border-color: #979797;
+   border-radius: 8px;
+}
+
+#serviceImageNoBorder {
+   width: 100%;
+}
+
+.rowSep {
+   margin: 50px;
+}
+
+.lastImage {
+   margin-bottom: 100px;
+}
+
+.serviceTextLeft {
+   max-width: 250px;
+   margin: 50px;
+   font-size: 150%;
+   text-align: right;
+   color: #545454;
+}
+
+.serviceImage300 {
+   max-width: 300px;
+}
+
+.serviceImageThin {
+   max-width: 100px;
+   margin: 50px 200px 50px 100px;
+}
+
+#romanShield {
+   max-width: 250px;
+}
+
+.serviceImage400 {
+   max-width: 400px;
+}
+
+.serviceImage500 {
+   max-width: 500px;
+}
+
+.serviceImage800 {
+   max-width: 800px;
+}
+
+.dropShadowRight {
+   filter: drop-shadow(5px 5px 10px rgb(50, 50, 50));
+}
+
+.serviceTextRight {
+   max-width: 250px;
+   margin: 50px;
+   font-size: 150%;
+   text-align: left;
+   color: #545454;
+}
+
+.serviceTextBottom {
+   max-width: 600px;
+   margin-top: -20px;
+   margin-bottom: 50px;
+   font-size: 150%;
+   text-align: center;
+   color: #545454;
+}
+
+.serviceTextCenter {
+   margin: 30px;
+   text-align: center;
+}
+
+#appleBadge {
+   height: 52px;
+}

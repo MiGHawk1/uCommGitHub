@@ -1,0 +1,78 @@
+
+.servicesTitle {
+   display: flex;
+   justify-content: right;
+   margin-top: -20px;
+   height: 80px;
+   background: linear-gradient(to right, rgba(230, 233, 235, 0.7), rgb(172, 34, 107, 1.0));
+}
+
+.servicesTitle h2 {
+   color: #E7E7E7;
+   font-weight: bold;
+   letter-spacing: 2px;
+   font-size: 180%;
+   margin-top: 34px;
+   margin-right: 60px;
+}
+
+.serviceGoldBg {
+   background-image: url(/images/ServicesBgTextureGold.jpg);
+}
+
+.contactUsContainer {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+
+.formSection {
+   display: flex;
+   justify-content: center;
+   margin: 60px;
+   border-style: solid;
+   border-color: #49748E;
+   border-width: 75px;
+}
+
+#mc_embed_shell {
+   margin: -20px 0px;
+}
+
+#mc_embed_signup { 
+   background:#ffffff;
+   max-width: 700px;
+}
+
+#mc-embedded-subscribe-form input[type=checkbox] {
+   display: inline; 
+   width: auto;
+   margin-right: 10px;
+}
+
+#titleImage {
+   width: 350px;
+   margin: 20px 0px;
+}
+
+#formTitle {
+   text-align: center;
+}
+
+#mc_embed_signup_scroll {
+   padding: 25px;
+}
+
+#mergeRow-gdpr {
+   margin-top: 20px;
+}
+
+#mergeRow-gdpr fieldset label {
+   font-weight: normal;
+}
+
+#mc-embedded-subscribe-form .mc_fieldset {
+   border:none;
+   min-height: 0px;
+   padding-bottom:0px;
+}

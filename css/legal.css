@@ -1,0 +1,107 @@
+
+.servicesTitle {
+   display: flex;
+   justify-content: right;
+   margin-top: -20px;
+   height: 80px;
+   background: linear-gradient(to right, rgba(230, 233, 235, 0.7), rgb(172, 34, 107, 1.0));
+}
+
+.servicesTitle h2 {
+   color: #E7E7E7;
+   font-weight: bold;
+   letter-spacing: 2px;
+   font-size: 180%;
+   margin-top: 34px;
+   margin-right: 60px;
+}
+
+.attribContainer {
+   display: flex;
+   flex-wrap: wrap;
+}
+.legalContainer {
+   display: flex;
+   flex-direction: column;
+}
+
+.serviceGoldBg {
+   background-image: url(/images/ServicesBgTextureGold.jpg);
+}
+
+.topSection {
+   display: flex;
+   flex-direction: column;
+   margin: 40px 60px;
+}
+
+.introText {
+   font-size: 130%;
+   text-align: left;
+   color: #545454;
+}
+
+.topIntro {
+   text-align: center;
+}
+
+.legalText {
+   font-size: 120%;
+   /* flex: 0 1 1000px; */
+   color: #545454;
+}
+
+.bottomSection {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin: 0px 60px 60px 60px;
+}
+
+.attribution {
+   display: flex;
+   gap: 20px;
+   flex: 0 1 460px;
+   margin: 20px;
+}
+
+.attrImgCont {
+   flex: 0 1 120px;
+}
+
+.attributionImage {
+   max-width: 100%;
+   border: 1px;
+   border-style: solid;
+   border-color: #979797;
+   border-radius: 8px;
+}
+
+.attrLinks {
+   font-size: 110%;
+   color: #545454;
+   
+}
+
+.attrLinks a:link {
+   color: #49748E;
+   text-decoration: none;
+}
+
+.subtitle {
+   text-decoration: underline;
+   font-weight: bold;
+}
+
+.subSubTitle {
+   text-decoration: underline;
+}
+
+#legalEmail {
+   width: 145px;
+   margin-left: 2px;
+}
+
+.leftJustified {
+   text-align: right;
+}

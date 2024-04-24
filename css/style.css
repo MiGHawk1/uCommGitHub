@@ -1,0 +1,159 @@
+
+.mottoContainer {
+   display: flex;
+   justify-content: center;
+   color: #49748e;
+   margin-top: -20px;
+   min-height: 165px;
+}
+
+.motto {
+   width: 560px;
+   font-family: Arial;
+   font-style: oblique;
+   align-self: center;
+   text-align: center;
+   margin-top: 40px;
+}
+
+.frontImage {
+   background-image: url(/images/Analytics-Homepage-Banner.jpg);
+   background-position: 0% 3%;
+   background-size: 100%;
+   height: 270px;
+}
+
+.eBookContainer {
+   display: flex;
+   background-color: #e5e7ea;
+   height: 480px;
+}
+
+.eBookLeft {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-content: center;
+   flex: 0 1 500px;
+   margin: 0px 10px;
+}
+
+#releaseTitle {
+   height: 50px;
+   align-self: center;
+   color: #226BAC;
+   white-space: nowrap;
+}
+
+#releaseTitle h2 {
+   font-size: 150%;
+   font-weight: bold;
+}
+
+#eBookImageCont {
+   align-self: center;
+   width: 400px;
+   max-width: 70%;
+}
+
+#eBookImage {
+   width: 100%;
+}
+
+#badge {
+   align-self: center;
+}
+
+#appleBadge {
+   height: 48px;
+}
+
+.eBookRight {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   flex: 0 1 580px;
+}
+
+.eBookDesc {
+   height: 240px;
+   margin-top: 80px;
+   margin-right: 20px;
+   margin: 90px 40px 20px 0px;
+   font-size: large;
+   color: #545454;
+}
+
+#blueButton {
+   height: 44px;
+   cursor: pointer;
+}
+
+.servicesContainer {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.servicesLeft {
+   flex-grow: 1;
+   background-image: url(/images/ServicesBgTextureGold.jpg);
+   min-width: 560px;
+}
+
+.serviceAreaLink {
+   text-decoration: none;
+}
+
+.serviceAreaLink:hover div {
+   background-color: #dbe0e7;
+}
+
+.serviceArea {
+   display: flex;
+   align-items: center;
+   height: 140px;
+   border: 0.5px;
+   border-style: solid;
+   border-color: #dbe0e7;
+}
+
+.serviceArea:hover div {
+   display: block;
+}
+
+.buttonEdge {
+   flex-grow: 1;
+   max-width: 100px;
+   margin-left: 45px;
+   margin-right: 45px;
+   border: 1px;
+   border-style: solid;
+   border-color: #979797;
+   border-radius: 8px;
+   background-color: rgba(109, 152, 187, .2);
+}
+
+.serviceImg {
+   max-height: 100px;
+}
+
+.serviceTitle {
+   color: #545454;
+}
+
+.serviceDesc {
+   max-width: 330px;
+   display: none;
+}
+
+.servicesRight {
+   flex-grow: 1;
+   background-image: url(/images/ServicesBgTextureGold.jpg);
+   min-width: 560px;
+}
+
+#hidden {
+   display: none;
+}
+
