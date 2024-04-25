@@ -23,6 +23,10 @@
    height: 270px;
 }
 
+.frontImage img {
+   display: none;
+}
+
 .eBookContainer {
    display: flex;
    background-color: #e5e7ea;
