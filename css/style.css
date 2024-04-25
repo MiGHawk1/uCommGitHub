@@ -23,6 +23,10 @@
    height: 270px;
 }
 
+.frontImage::before {
+   content: "" / "Laptop with analytics data";
+}
+
 .eBookContainer {
    display: flex;
    background-color: #e5e7ea;
