@@ -97,7 +97,7 @@
 }
 
 #legalEmail {
-   width: 145px;
+   width: 15%;
    margin-left: 2px;
 }
 
@@ -117,6 +117,10 @@
 
    .introText {
       font-size: 120%;
+   }
+
+   #legalEmail {
+      width: 18%;
    }
 
    
@@ -144,6 +148,10 @@
 
    .introText {
       font-size: 110%;
+   }
+
+   #legalEmail {
+      width: 36%;
    }
 
 }
