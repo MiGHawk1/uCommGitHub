@@ -22,16 +22,12 @@
 
 .contactUsContainer {
    display: flex;
-   /* flex-wrap: wrap; */
    justify-content: space-evenly;
 }
 
 #formSection {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 1550px;
-   width: 850px;
+   flex: 0 1 850px;
+   height: 1430px;
    margin: 60px;
 }
 
@@ -40,3 +36,30 @@
    height: 100%;
 }
 
+@media screen and (max-width: 850px) and (min-width: 619px) {
+
+   .servicesTitle h2 {
+      margin-right: 40px;
+   }
+
+   #formSection {
+      margin: 40px;
+      min-width: 500px;
+   }
+   
+}
+
+@media screen and (max-width: 618px) {
+
+   .servicesTitle h2 {
+      font-size: 160%;
+      margin-top: 36px;
+      margin-right: 20px;
+   }
+
+   #formSection {
+      margin: 0px;
+      min-width: 380px;
+   }
+
+}

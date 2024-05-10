@@ -20,6 +20,7 @@
    display: flex;
    flex-wrap: wrap;
 }
+
 .legalContainer {
    display: flex;
    flex-direction: column;
@@ -32,12 +33,11 @@
 .topSection {
    display: flex;
    flex-direction: column;
-   margin: 40px 60px;
+   margin: 4% 8%;
 }
 
 .introText {
    font-size: 130%;
-   text-align: left;
    color: #545454;
 }
 
@@ -47,7 +47,6 @@
 
 .legalText {
    font-size: 120%;
-   /* flex: 0 1 1000px; */
    color: #545454;
 }
 
@@ -104,4 +103,47 @@
 
 .leftJustified {
    text-align: right;
+}
+
+@media screen and (max-width: 850px) and (min-width: 619px) {
+
+   .servicesTitle h2 {
+      margin-right: 40px;
+   }
+
+   .legalText {
+      font-size: 110%;
+   }
+
+   .introText {
+      font-size: 120%;
+   }
+
+   
+}
+
+@media screen and (max-width: 618px) {
+
+   .titleImage {
+      margin-top: 16%;
+   }
+
+   .servicesTitle h2 {
+      font-size: 160%;
+      margin-top: 36px;
+      margin-right: 20px;
+   }
+
+   .legalText {
+      font-size: 100%;
+   }
+
+   .topSection {
+      margin: 12% 8%;
+   }
+
+   .introText {
+      font-size: 110%;
+   }
+
 }

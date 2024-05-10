@@ -6,45 +6,46 @@ body {
 
 .heroContainer {
    display: flex;
-   min-height: 550px;
+   flex-wrap: wrap;
    margin-top: -20px;
    background-color: #f2f2f2;
-   justify-content: space-evenly;
+   justify-content: center;
+   gap: 8%;
 }
 
 #mottoContainer {
    display: flex;
-   flex-direction: column;
    justify-content: center;
-   flex: 0 1 300px;
-   margin-bottom: 80px;
+   align-items: center;
+   flex: 0 1 30%;
+   margin-top: -8%;
 }
 
 #mottoText {
    width: 100%;
-   font-size: 48px;
+   font-size: 300%;
    font-weight: bold;
    color: #49748e;
 }
 
 #eBookContainer {
    display: flex;
-   margin-top: 40px;
+   margin: 8% 0% 4% 0%;
    flex-direction: column;
    justify-content: space-evenly;
-   flex: 0 1 400px;
+   align-items: center;
+   flex: 0 1 35%;
 }
 
 #eBookImage  {
    width: 100%;
 }
 
-#badge {
-   align-self: center;
-}
+
 
 #appleBadge {
-   height: 54px;
+   width: 100%;
+   margin: 40% 0px 0px 0px;
 }
 
 .introContainer {
@@ -54,30 +55,33 @@ body {
 }
 
 #introText {
-   align-self: center;
-   flex: 0 1 1000px;
+   flex: 0 1 90%;
    font-size: 1.4em;
-   margin: 20px 40px;
+   margin: 20px;
    color: #e7e7e7;
 }
 
 .featuresContainer {
    display: flex;
    flex-wrap: wrap;
+   justify-content: center;
+   gap: 80px;
+   padding: 6% 0%;
    background: linear-gradient(to top, rgba(73, 116, 142, 0.7) 0%, rgb(73, 116, 142) 100%);
 }
 
 .featureRow {
    display: flex;
+   flex-wrap: wrap;
    justify-content: center;
-   margin: 40px;
+   gap: 4%;
 }
 
 .featureImageLong {
-   flex: 0 1 550px;
+   flex: 0 1 60%;
    display: flex;
    background-color: rgba(255, 255, 255, 0.9);
-   border-radius: 10px;
+   border-radius: 14px;
 }
 
 .longImage {
@@ -85,15 +89,17 @@ body {
 }
 
 .featureDesc {
-   align-self: center;
-   flex: 0 1 380px;
+   flex: 0 1 25%;
    font-size: 1.4em;
    color: #e7e7e7;
-   margin: 0 30px
+}
+
+.textOnLeft {
+   text-align: right;
 }
 
 .featureImageShort {
-   flex: 0 1 500px;
+   flex: 0 1 50%;
    display: flex;
    background-color: #e7e7e7;
    border-radius: 10px;
@@ -106,17 +112,99 @@ body {
 .endContainer {
    display: flex;
    background-color: #49748e;
-   justify-content: space-evenly;
+   justify-content: center;
+   align-items: center;
+   gap: 5%;
 }
 
 #endText {
-   align-self: center;
-   flex: 0 1 600px;
+   flex: 0 1 60%;
    font-size: 1.4em;
-   margin: 40px 0px;
    color: #e7e7e7;
 }
 
+#bottomBadge {
+   max-width: 100%;
+}
 
+@media screen and (max-width: 850px) and (min-width: 619px) {
+
+   #mottoText {
+      font-size: 200%;
+   }
+
+   #introText {
+      font-size: 1.3em;
+   }
+
+   .featureImageLong {
+      flex: 0 1 55%;
+   }
+
+   .featureDesc {
+      flex: 0 1 30%;
+      font-size: 1.3em;
+   }
+   
+}
+
+@media screen and (max-width: 618px) {
+
+   .heroContainer {
+      margin: 16% 0%;
+   }
+
+   #mottoContainer {
+      flex: 0 1 55%;
+      text-align: center;
+   }
+
+   #mottoText {
+      font-size: 200%;
+   }
+
+   #eBookContainer {
+      min-width: 300px;
+   }
+
+   #introText {
+      font-size: 1.2em;
+   }
+
+   .featureImageLong {
+      min-width: 85%;
+   }
+
+   .featureImageShort {
+      min-width: 80%;
+   }
+
+   .featureDesc {
+      flex: 0 1 75%;
+      font-size: 1.2em;
+      text-align: center;
+   }
+
+   #sidenotesImg {
+      order: 1;
+   }
+
+   #sidenotesTxt {
+      order: 2;
+   }
+
+   #notesImg {
+      order: 3;
+   }
+
+   #notesTxt {
+      order: 4;
+   }
+
+   #endText {
+      font-size: 1em;
+   }
+
+}
 
 

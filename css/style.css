@@ -4,68 +4,59 @@
    justify-content: center;
    color: #49748e;
    margin-top: -20px;
-   min-height: 165px;
+   padding: 10px;
 }
 
 .motto {
-   width: 560px;
+   width: 55%;
    font-family: Arial;
    font-style: oblique;
+   font-size: 200%;
    align-self: center;
    text-align: center;
    margin-top: 40px;
 }
 
 .frontImage {
-   background-image: url(/images/Analytics-Homepage-Banner.jpg);
-   background-position: 0% 3%;
-   background-size: 100%;
-   height: 270px;
-}
-
-.frontImage::before {
-   content: "" / "Laptop with analytics data";
+   margin-top: -4px;
+   margin-bottom: -4px;
 }
 
 .eBookContainer {
    display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
    background-color: #e5e7ea;
-   height: 480px;
+   padding: 40px;
 }
 
 .eBookLeft {
    display: flex;
    flex-direction: column;
+   align-items: center;
    justify-content: space-evenly;
-   align-content: center;
-   flex: 0 1 500px;
-   margin: 0px 10px;
+   flex: 0 1 45%;
+   min-width: 450px;
 }
 
 #releaseTitle {
-   height: 50px;
-   align-self: center;
    color: #226BAC;
-   white-space: nowrap;
 }
 
 #releaseTitle h2 {
-   font-size: 150%;
+   font-size: 1.5em;
    font-weight: bold;
 }
 
 #eBookImageCont {
-   align-self: center;
-   width: 400px;
-   max-width: 70%;
+   max-width: 80%;
+   margin: 10px;
 }
 
 #eBookImage {
    width: 100%;
-}
-
-#badge {
-   align-self: center;
+   max-width: 300px;
 }
 
 #appleBadge {
@@ -77,30 +68,29 @@
    flex-direction: column;
    justify-content: space-evenly;
    align-items: center;
-   flex: 0 1 580px;
+   flex: 0 2 50%;
+   min-width: 320px;
 }
 
 .eBookDesc {
-   height: 240px;
-   margin-top: 80px;
-   margin-right: 20px;
-   margin: 90px 40px 20px 0px;
-   font-size: large;
+   margin: 50px 0px 0px 0px;
+   font-size: 1.2em;
    color: #545454;
 }
 
 #blueButton {
-   height: 44px;
    cursor: pointer;
+   max-height: 48px;
 }
 
 .servicesContainer {
    display: flex;
    flex-wrap: wrap;
+   justify-content: center;
 }
 
 .servicesLeft {
-   flex-grow: 1;
+   flex: 1 1 45%;
    background-image: url(/images/ServicesBgTextureGold.jpg);
    min-width: 560px;
 }
@@ -129,8 +119,8 @@
 .buttonEdge {
    flex-grow: 1;
    max-width: 100px;
-   margin-left: 45px;
-   margin-right: 45px;
+   margin-left: 40px;
+   margin-right: 30px;
    border: 1px;
    border-style: solid;
    border-color: #979797;
@@ -152,12 +142,56 @@
 }
 
 .servicesRight {
-   flex-grow: 1;
+   /* flex-grow: 1; */
+   flex: 1 1 45%;
    background-image: url(/images/ServicesBgTextureGold.jpg);
-   min-width: 560px;
+   min-width: 480px;
 }
 
 #hidden {
    display: none;
 }
 
+@media screen and (max-width: 850px) and (min-width: 619px) {
+
+   .motto {
+      font-size: 150%;
+      margin-top: 40px;
+   }
+
+   #blueButton {
+      max-height: 38px;
+   }
+   
+}
+
+@media screen and (max-width: 618px) {
+   .mottoContainer {
+      display: flex;
+      margin-bottom: 20px;
+      z-index: -1;
+      /* align-content: flex-end; */
+      /* margin-top: -30px; */
+   }
+
+   .motto {
+      font-size: 120%;
+      margin-top: 40px;
+   }
+
+   #blueButton {
+      max-height: 38px;
+   }
+
+   .servicesLeft {
+      min-width: 360px;
+   }
+
+   .servicesRight {
+      min-width: 360px;
+   }
+
+   .serviceTitle h2 {
+      font-size: 120%;
+   }
+}

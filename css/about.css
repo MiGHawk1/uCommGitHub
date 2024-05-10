@@ -30,20 +30,22 @@
 
 .topSection {
    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
    align-items: center;
-   gap: 40px;
-   margin: 40px 40px 20px 40px;
+   gap: 4%;
+   margin: 4%;
 }
 
 .aboutUsText {
    font-size: 130%;
-   flex: 0 1 450px;
+   flex: 0 1 48%;
    text-align: left;
    color: #545454;
 }
 
-#happyOfficeImg {
-   flex: 0 3 650px;
+#topImg {
+   flex: 0 1 48%;
 }
 
 .aboutImage {
@@ -56,12 +58,86 @@
 
 .bottomSection {
    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
    align-items: center;
-   gap: 40px;
-   margin: 20px 40px 60px 40px;
+   gap: 4%;
+   margin: 2% 4% 6% 4%;
 }
 
 #bottomImg {
-   flex: 0 1 550px;
+   flex: 0 1 48%;
 }
 
+@media screen and (max-width: 850px) and (min-width: 619px) {
+
+   .servicesTitle h2 {
+      margin-right: 40px;
+   }
+
+   #topImg {
+      min-width: 90%;
+      order: 0;
+      margin: 40px 0px 20px 0px;
+   }
+
+   #firstP {
+      order: 2;
+   }
+
+   #bottomImg {
+      min-width: 90%;
+      order: 3;
+      margin: 0px 0px 20px 0px;
+   }
+
+   #secondP {
+      order: 4;
+   }
+
+   .aboutUsText {
+      font-size: 120%;
+      flex: 0 1 90%;
+   }
+
+   
+}
+
+@media screen and (max-width: 618px) {
+
+   .servicesTitle h2 {
+      font-size: 160%;
+      margin-top: 36px;
+      margin-right: 20px;
+   }
+
+   #topImg {
+      min-width: 90%;
+      order: 0;
+      margin: 50px 0px 20px 0px;
+   }
+
+   #firstP {
+      order: 2;
+   }
+
+   #bottomImg {
+      min-width: 90%;
+      order: 3;
+      margin: 0px 0px 20px 0px;
+   }
+
+   #secondP {
+      order: 4;
+   }
+
+   .aboutUsText {
+      font-size: 110%;
+      flex: 0 1 90%;
+   }
+
+   .bottomSection {
+      margin: 8% 4%;
+   }
+
+}

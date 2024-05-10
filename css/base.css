@@ -15,9 +15,12 @@ h1, h2, h3 {
    font-weight: normal;
 }
 
+.img100 {
+   max-width: 100%;
+}
+
 .wrapper {
    max-width: 1120px;
-   min-width: 896px;
    margin-left: auto;
    margin-right: auto;
    background-color: #f2f2f2;
@@ -34,9 +37,9 @@ header {
 .navArea {
    display: flex;
    flex-direction: column;
-   height: 100px;
+   max-height: 100px;
    background-image: url('../images/bgNavArea.png');
-   flex: 1 0 500px;
+   flex: 1 1 500px;
 }
 
 #techEd {
@@ -50,11 +53,23 @@ header {
    margin-bottom: 4px;
 }
 
+#mobileBtn {
+   display: none;
+   width: 30px;
+   align-self: flex-end;
+   margin-right: 5px;
+   margin-top: -23px;
+}
+
 .mainNav {
    display: flex;
    flex: 0 1 500px;
    min-height: 40px;
    white-space: nowrap;
+}
+
+.mobileNav {
+   display: none;
 }
 
 .menuList {
@@ -69,7 +84,7 @@ header {
    min-height: 40px;
    font-weight: 500;
    color: #e7e7e7;
-   padding: 8px 20px;
+   padding: 8px 16px;
    background-color: rgba(34, 108, 172, .8);
    cursor: pointer;
    text-decoration: none;
@@ -94,15 +109,15 @@ footer li {
 }
 
 .copyright {
-   margin-left: 20px;
+   margin-left: 16px;
    color: #545454;
 }
 
 .policies {
-   margin-right: 20px;
+   margin-right: 16px;
    display: flex;
    color: #226BAC;
-   align-self: center;
+   /* align-self: center; */
 }
 
 .policies a {
@@ -111,4 +126,125 @@ footer li {
 
 .policies a:link {
    color: #49748E;
+}
+
+@media screen and (max-width: 850px) and (min-width: 619px) {
+
+   #siteLogo {
+      width: 240px;
+   }
+
+   #compName {
+      font-size: 21px;
+      margin: 16px 0px 0px 0px;
+   }   
+
+   .navArea {
+      display: flex;
+      height: 75px;
+      background-image: url('../images/bgNavArea.png');
+   }
+
+   .mainNav {
+      display: flex;
+      flex: 0 1 500px;
+      white-space: nowrap;
+   }
+
+   .menuItem {
+      font-size: 90%;
+      color: #e7e7e7;
+      padding: 6px 10px;
+      background-color: rgba(34, 108, 172, .8);
+      cursor: pointer;
+      text-decoration: none;
+   }
+
+}
+
+@media screen and (max-width: 618px) {
+   
+   .wrapper {
+      max-width: 600px;
+      min-width: 360px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #f2f2f2;
+   }
+
+   #siteLogo {
+      width: 160px;
+      height: 40px;
+   }
+
+   #compName {
+      font-size: 14px;
+      margin: 12px 0px 0px 0px;
+   }   
+   
+   .navArea {
+      display: flex;
+      height: 40px;
+      background-image: url('../images/bgNavArea.png');
+   }
+
+   .mainNav {
+      display: none;
+   }
+
+   #mobileBtn {
+      display: flex;
+   }
+
+   .mobileNav {
+      display: flex;
+      z-index: 1;
+      margin-top: -11px;
+   }
+
+   .menuColumn {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      margin-top: 10px;
+      gap: 6px;
+      list-style-type: none;
+      padding: 0;
+
+   }
+
+   .menuColumn.active {
+      display: flex;
+   }
+
+   .menuItem {
+      margin: 0px 0px 0px 12px;
+      font-size: 90%;
+      color: #e7e7e7;
+      padding: 2px 8px;
+      background-color: rgba(34, 108, 172, .7);
+      cursor: pointer;
+      text-decoration: none;
+   }
+
+   footer {
+      font-size: 0.7em;
+   }
+
+   .copyright {
+      margin-left: 8px;
+      padding: 3px;
+   }
+
+   .policies {
+      margin-right: 8px;
+   }
+
+   footer li {
+      padding: 3px 3px;
+   }
+
+   footer ul {
+      padding: 0px 6px;
+   }
 }
